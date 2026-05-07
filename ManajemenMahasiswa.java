@@ -107,7 +107,7 @@ public class ManajemenMahasiswa {
                         // Validasi dilakukan agar tidak terjadi NullPointerException
                         if (lihatMhs !=null) {
                             System.out.println("");
-                            lihatMhs.tampilData();
+                            lihatMhs.tampilData(true);
                             System.out.println("");
                             check = true;
                         }
@@ -132,7 +132,7 @@ public class ManajemenMahasiswa {
                                 
                                 // Encapsulasi : mengakses atribut NIM melalui getNim()
                                 if (daftarMhs[i].getNim().equals(nimTemp)) {
-                                daftarMhs[i].tampilData();
+                                daftarMhs[i].tampilData(true);
                                 check = true;
                                 System.out.println("");
                             } 
@@ -153,7 +153,7 @@ public class ManajemenMahasiswa {
                             
                             //memanggil method lulus
                             if (daftarMhs[y].isLulus()) {
-                                daftarMhs[y].tampilData();
+                                daftarMhs[y].tampilData(true);
                                 check = true;
                             } 
                         }
